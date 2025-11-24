@@ -1,6 +1,6 @@
 import os
 import sys
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
 from fnmatch import fnmatchcase
 from distutils.util import convert_path
 
@@ -51,8 +51,7 @@ setup(name='docassemble.motiontoToMakeAMotionMissV1128',
       author_email='makhala.moholobela@gmail.com',
       license='The MIT License (MIT)',
       url='https://docassemble.org',
-      packages=find_packages(),
-      namespace_packages=['docassemble'],
+      packages=find_namespace_packages(),
       install_requires=[],
       zip_safe=False,
       package_data=find_package_data(where='docassemble/motiontoToMakeAMotionMissV1128/', package='docassemble.motiontoToMakeAMotionMissV1128'),
